@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sbadmin2</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<style>
+  .navbar-link > li > a{
+    color: white;
+  }
+  .navbar-link > li > a:hover{
+    color: purple;
+    background-color: white;
+  }
+  .navbar-top-links > li > a {
+    padding: 12px;
+    min-height: 43px;
+  }
+  .navbar {
+    min-height: 43px;
+  }
+</style>
+<body style="background-color:white;">
+  <div id="wrapper">
+    <img src="../images/banner.png" width="100%" style="border-color:#e1b3ff;border-radius:0px"></img>
+    <%= render "shared/navbar" %>
+    <%= render "shared/sidebar" %>
+    <div id="page-wrapper">
+        <%= yield %>
+    </div>
+</div>
+</body>
+</html>
