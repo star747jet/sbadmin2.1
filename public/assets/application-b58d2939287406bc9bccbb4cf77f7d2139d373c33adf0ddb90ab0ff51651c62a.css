@@ -7689,6 +7689,7 @@ tbody.collapse.in {
 .collapsing {
   position: relative;
   height: 0;
+  overflow: hidden;
   -webkit-transition-timing-function: ease;
   -o-transition-timing-function: ease;
   transition-timing-function: ease;
